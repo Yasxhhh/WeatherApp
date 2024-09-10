@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tab.current-tab{
+    background-color:rgb(157, 201, 239);
+    border-radius: 4px;
+}
+
+.font{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.wrapper{
+    width: 100vw;    /* isse poori screen fill hone jitna h,w ho jati h */
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72f3 100%);
+}
+
+h1 { 
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tab-container{
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tab{
+    cursor: pointer;
+    color: white;
+    font-size: 0.875rem;
+    padding: 5px 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.weather-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grantLocation{
+    display:none;
+}
+
+
+.grantLocation.active{
+    display: flex;
+}
+
+.grantLocation p{
+    margin-top: 20px;
+    color: white;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ .grantLocation img{
+    margin-top: 20px;
+    border-radius: 50%;
+ }
+
+
+
+.accessBtn{
+    font-size:  0.85rem;
+    margin-top: 10px;
+    border: none;
+    padding: 7px 10px;
+    color: white;
+    border-radius: 3px;
+    background-color: #b2c6fa;
+    cursor: pointer; 
+}
+
+.loading-screen{
+   display: none;
+    
+}
+.loading-screen.active{
+    display: flex;
+}
+
+.user-info{
+    display: none;
+}
+
+.user-info.active{
+    display: flex;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.name p{
+    font-size: 2rem;
+}
+.name img{
+    width: 25px;
+    height: 20px;
+    margin-top: 10px;
+}
+.user-info p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.weatherImage{
+    width: 90px;
+    height: 90px;
+}
+
+.user-info p.dataTemp{
+    font-size: 2.75rem;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.parameter-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 100px 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parameter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.p2{
+    background-color: white;
+    height: 100px;
+}
+.parameter-container p.font{
+    font-size:medium;
+}
+
+.data-search{
+    display: none;
+}
+.data-search.active{
+    display: flex;
+    margin-top: 20px;
+}
+.btn{
+    
+    width: 30px;
+}
+.data-search img{
+    border-radius: 50%;
+   
+}
